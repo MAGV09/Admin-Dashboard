@@ -81,6 +81,7 @@ body {
   border-radius: 15px;
   background-color: #e1e8f1;
   border: none;
+  padding: 1rem;
 }
 
 .user-info {
@@ -128,6 +129,28 @@ body {
   grid-column: 1;
   grid-row: 1/3;
   color: white;
+  padding: 0.5rem 1.3rem;
+  display: grid;
+  grid-template-rows: 3rem repeat(2, 15rem);
+  gap: 3.1rem;
+  font-weight: 700;
+}
+.nav-elements,
+.nav-tools {
+  display: grid;
+  row-gap: 15px;
+  align-content: start;
+}
+.dashboard {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.nav-elements > div,
+.nav-tools > div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 .content {
   background-color: #e1e8f2;
@@ -141,7 +164,7 @@ body {
   grid-row: 2/4;
 }
 .sidebar > :nth-child(1) {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .sidebar > div:not(:first-child) {
   font-size: 1.1rem;
@@ -149,9 +172,11 @@ body {
 }
 
 .icons {
-  width: 1.4em;
+  width: 1.2em;
 }
-
+.dashboard>.icons{
+  width: 1.6em;
+}
 .action-icons {
   width: 1.4rem;
 }
