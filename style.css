@@ -176,14 +176,14 @@ body {
   padding: 2rem 1.2rem;
   font-size: 1.1rem;
   display: grid;
-  grid-template-rows: 3fr 3fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
 }
 .projects>p{
   font-size: 0.9rem;
 }
 .icons-container{
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 
 .icons-container>button{
@@ -217,7 +217,7 @@ body {
   width: 1.6em;
 }
 .action-icons {
-  width: 1.4rem;
+  width: 1.2em;
 }
 .imgs {
   width: 3em;
