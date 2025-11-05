@@ -6,6 +6,7 @@
 
 :root {
   line-height: 1.5;
+  --sidebar-size:1fr
 }
 
 h1,
@@ -63,7 +64,7 @@ h4 {
 }
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-columns: var(--sidebar-size) 4fr 1fr;
   grid-template-rows: 1fr 5fr;
   height: 100vh;
   width: 100vw;
@@ -149,17 +150,21 @@ h4 {
   display: grid;
   row-gap: 15px;
   align-content: start;
+  
 }
 .dashboard {
   display: flex;
   gap: 10px;
   align-items: center;
+
 }
 .nav-elements > div,
 .nav-tools > div {
   display: flex;
   gap: 20px;
+ 
 }
+
 .content {
   background-color: #e1e8f2;
   grid-column: 2;
@@ -228,14 +233,13 @@ h4 {
 .announcements {
   font-size: 0.7rem;
 }
-.announcements>p,.trends>p{
+.announcements > p,
+.trends > p {
   color: rgb(95, 95, 95);
-
 }
-.announcement-container>:not(:last-child){
-  border-bottom:1px solid black ;
+.announcement-container > :not(:last-child) {
+  border-bottom: 1px solid black;
   padding-bottom: 1.2rem;
-
 }
 .trend-container {
   padding: 0.8rem 1.2rem;
@@ -249,7 +253,6 @@ h4 {
   display: flex;
   gap: 15px;
   font-size: 0.9rem;
-
 }
 .trends span {
   display: block;
@@ -283,4 +286,13 @@ a:link {
 }
 a:visited {
   color: inherit;
+}
+
+.display{
+  display: none;
+
+}
+.center{
+
+justify-content: center;
 }
